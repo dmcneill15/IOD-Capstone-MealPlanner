@@ -5,7 +5,7 @@ export default function Profile() {
         <main>
             <section>
                 <div className="title-container">
-                    <h1 className="slogan">Hello World! Welcome to your profile</h1>
+                    <h1 className="page-title">Hello World! Welcome to your profile</h1>
                 </div>
             </section>
         </main>
