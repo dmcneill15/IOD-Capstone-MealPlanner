@@ -12,9 +12,9 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="home-buttons center">
-          <a class="custom-btn btn btn-primary" href="#" role="button">Sign Up</a>
-          <a class="custom-btn btn btn-primary" href="#" role="button">Login</a>
+        <div className="center mt-5 ">
+          <a class="custom-btn btn btn-outline-light" href="#" role="button">Sign Up</a>
+          <a class="custom-btn btn btn-outline-light" href="#" role="button">Login</a>
         </div>
       </section>
     </main>

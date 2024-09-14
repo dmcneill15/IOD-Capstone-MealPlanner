@@ -30,11 +30,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  font-weight: bold;
-  color: #728F37ff;
-}
-
 .title-container {
   text-align: center;
   margin:0;
@@ -49,14 +44,6 @@ a:hover {
   margin:0;
   padding: 0px 0px 20px 0px;
 }
-/*
-.nav-container {
-  padding: 10px 0px 00px 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: large;
-}*/
 
 .nav-container{
   width:100%;
@@ -124,10 +111,7 @@ a:hover {
 
 .nav-bar li a.active {
     color: #728F37ff;
-}
-
-.pzza-card {
-  max-width: 250px;
+    font-weight: bold;
 }
 
 .custom-col{
@@ -170,6 +154,11 @@ a:hover {
 
 .custom-btn{
   margin:10px;
-  background-color:#728F37ff !important; 
-  border: #728F37ff !important;
+  color:white !important;
+  background-color:rgb(69, 95, 66) !important; 
+  transition: transform 0.2s ease-in-out;
+}
+
+.custom-btn:hover{
+  transform: translateY(-3px);
 }
