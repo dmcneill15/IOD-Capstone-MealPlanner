@@ -49,33 +49,53 @@ a:hover {
   font-style: normal;
   margin:0;
 }
-
+/*
 .nav-container {
   padding: 10px 0px 00px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: large;
+}*/
+
+.nav-container{
+  width:100%;
+  font-size: large
 }
 
 .nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  padding: 0 2em;
+}
+
+.nav-left{
+  display: flex;
+  align-items: center;
+}
+
+.nav-title{
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0 1em; /* Adjust margin to control spacing between logo and title */
 }
 
 .nav-main {
   display: flex;
-  list-style: none;
+  justify-content: center;
+  flex-grow: 1;
+  list-style-type: none;
   padding: 0;
-  margin-left: 150px;
-  margin-right: 120px;
+  margin: 0;
 }
 
-.nav-right, .nav-title{
-  display: flex;
-  list-style: none;
+.nav-main li {
+  margin: 0 1em; /* Adjust margin to control spacing between nav items */
+}
+
+.nav-right {
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
@@ -86,6 +106,11 @@ a:hover {
   text-decoration: none;
   color:black;
 }
+
+.nav-right li {
+  margin: 0 1em; /* Adjust margin to control spacing for profile link */
+}
+
 
 .nav-right li a{
   color:black;

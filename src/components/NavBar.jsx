@@ -26,16 +26,18 @@ function NavBar() {
 
     return (
         <header className="nav-container">
-            <nav className="nav-bar" >
-                <div className="Logo" style={{marginLeft:"2em"}}>
-                    <Image src="/images/logo.png" alt="Plan to Plate logo"
-                        width={120} height={120} priority
-                    />
+            <nav className="nav-bar">
+                <div className="nav-left">
+                    <div className="Logo">
+                        <Image src="/images/logo.png" alt="Plan to Plate logo"
+                            width={120} height={120} priority
+                        />
+                    </div>
+                    <ul className="nav-title">
+                        <li><h2>Plan to Plate</h2></li>
+                    </ul>
                 </div>
-                <ul className="nav-title">
-                    <li><h2>Plan to Plate</h2></li>
-                </ul>
-                <ul className="nav-main" >
+                <ul className="nav-main">
                     {navList.map((item, id) => (
                         <li key={id}>
                             <Link href={item.href} className={path === item.href ? 'active' : null}>
@@ -44,7 +46,7 @@ function NavBar() {
                         </li>
                     ))}
                 </ul>
-                <ul className="nav-right" style={{marginRight:"2em"}}>
+                <ul className="nav-right">
                     <li><Link href="/profile">Profile</Link></li>
                 </ul>
             </nav>
