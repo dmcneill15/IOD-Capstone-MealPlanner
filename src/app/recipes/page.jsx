@@ -12,8 +12,8 @@ export default function Recipes() {
         },
         {
             recipe_id: 2,
-            recipe_title: 'Pizza',
-            method: 'The best pizza recipe here',
+            recipe_title: 'Butter chicken',
+            method: 'The best butter chicken recipe here',
             servings: 4,
             image: '#',
         },
