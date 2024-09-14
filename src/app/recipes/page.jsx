@@ -5,7 +5,7 @@ export default function About() {
         <main>
             <section>
                 <div className="title-container">
-                    <h1 className="slogan">Your Recipe Catalog</h1>
+                    <h1 className="page-title">Your Recipe Catalog</h1>
                 </div>
             </section>
         </main>

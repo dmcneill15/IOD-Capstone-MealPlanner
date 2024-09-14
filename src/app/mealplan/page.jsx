@@ -5,7 +5,7 @@ export default function MealPlan() {
         <main>
             <section>
                 <div className="title-container">
-                    <h1 className="slogan">Meal Plan Calendar</h1>
+                    <h1 className="page-title">Meal Plan Calendar</h1>
                 </div>
             </section>
         </main>
