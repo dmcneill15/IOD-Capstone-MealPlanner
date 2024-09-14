@@ -24,6 +24,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #F6F6EFff;
+  height: 100%;
 }
 
 a {
@@ -123,6 +124,12 @@ a {
   text-align: center;
   margin: 0px;
   padding-top:20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 10px;
+  width: 100%;
 }
 
 .footer > a {
@@ -130,8 +137,8 @@ a {
   text-decoration: underline;
 }
 
-.icon{
-  margin-right:10px;
+.footer-icon-size{
+  font-size:20px !important;
 }
 
 .custom-mr-8em{

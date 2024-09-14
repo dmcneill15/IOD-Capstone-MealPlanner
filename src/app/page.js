@@ -13,8 +13,8 @@ export default function Home() {
       </section>
       <section>
         <div className="center mt-5 ">
-          <a class="custom-btn btn btn-outline-light" href="#" role="button">Sign Up</a>
-          <a class="custom-btn btn btn-outline-light" href="#" role="button">Login</a>
+          <a className="custom-btn btn btn-outline-light" href="#" role="button">Sign Up</a>
+          <a className="custom-btn btn btn-outline-light" href="#" role="button">Login</a>
         </div>
       </section>
     </main>

@@ -1,5 +1,6 @@
 import "./globals.css";
 import NavBar from '@/components/NavBar'
+import Footer from '@/components/Footer'
 
 export const metadata = {
   title: "Plan to Plate",
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <NavBar />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
