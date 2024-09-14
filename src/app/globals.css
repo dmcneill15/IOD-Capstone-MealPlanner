@@ -38,16 +38,16 @@ a:hover {
 .title-container {
   text-align: center;
   margin:0;
-  padding: 0px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
 }
 
 .page-title {
   font-size: 2.5em;
-  font-family: "Playwrite AU QLD", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   margin:0;
+  padding: 0px 0px 20px 0px;
 }
 /*
 .nav-container {
@@ -161,4 +161,15 @@ a:hover {
 
 .custom-bg-color{
   background-color: #eeeade !important;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.custom-btn{
+  margin:10px;
+  background-color:#728F37ff !important; 
+  border: #728F37ff !important;
 }

@@ -7,7 +7,14 @@ export default function Home() {
     <main>
       <section>
         <div className="title-container">
-          <h1 className="slogan"> Welcome to your personlised meal planner!</h1>
+          <h1 className="page-title"> Welcome to your personlised meal planner!</h1>
+          <p className="info-text">Type something here about the site and how to get started</p>
+        </div>
+      </section>
+      <section>
+        <div className="home-buttons center">
+          <a class="custom-btn btn btn-primary" href="#" role="button">Sign Up</a>
+          <a class="custom-btn btn btn-primary" href="#" role="button">Login</a>
         </div>
       </section>
     </main>
