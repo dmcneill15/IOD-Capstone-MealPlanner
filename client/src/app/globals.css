@@ -109,7 +109,8 @@ a {
 }
 
 .custom-btn{
-  margin:10px;
+  font-size: 0.85em !important;
+  margin:3px;
   color:white !important;
   background-color:rgb(69, 95, 66) !important; 
   transition: transform 0.2s ease-in-out;
