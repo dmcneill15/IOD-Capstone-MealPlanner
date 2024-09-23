@@ -51,59 +51,8 @@ a {
   font-size: large
 }
 
-.nav-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 2em;
-}
-
-.nav-left{
-  display: flex;
-  align-items: center;
-}
-
-.nav-title{
-  list-style-type: none;
-  padding: 0;
-  margin: 0 0 0 1em; /* Adjust margin to control spacing between logo and title */
-}
-
-.nav-main {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-main li {
-  margin: 0 1em; /* Adjust margin to control spacing between nav items */
-}
-
-.nav-right {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-main li a {
-  padding: 0.8em;
-  display: inline-block;
-  text-decoration: none;
-  color:black;
-}
-
-.nav-right li {
-  margin: 0 1em; /* Adjust margin to control spacing for profile link */
-}
 
 
-.nav-right li a{
-  color:black;
-  text-decoration: none;
-}
 
 .nav-bar li a:hover {
   font-weight: bold;
@@ -168,4 +117,23 @@ a {
 
 .custom-btn:hover{
   transform: translateY(-3px);
+}
+
+/* Default font size */
+.nav-link {
+  font-size: 1.2em !important;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .nav-link {
+      font-size: 1.5em !important;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 576px) {
+  .nav-link {
+      font-size: 0.8em !important;
+  }
 }
