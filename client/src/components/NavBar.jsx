@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-//👇 Import  font
+// Import  font
 import { EB_Garamond, Cinzel, Fauna_One } from 'next/font/google';
 
 const ebGaramond = EB_Garamond({
