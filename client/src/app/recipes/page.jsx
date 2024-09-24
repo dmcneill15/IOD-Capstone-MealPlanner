@@ -67,7 +67,7 @@ export default function Recipes() {
         <main>
             <section>
                 <div className="title-container">
-                <h2 className={`${montega.className} title center`}>Your recipe catalog</h2>
+                <h2 className={`${montega.className} title center`}>Your Recipe Catalog</h2>
                 </div>
             </section>
             {recipesJSX}
