@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.16">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="2ca16b54-16f6-2749-3443-fa8db7711227">
-    <mxGraphModel dx="5197" dy="1499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2787" dy="58" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -194,19 +194,19 @@
         <mxCell id="7rayjc50aCRU9zW0Twzs-28" value="&lt;div&gt;CREATE TABLE Recipes (&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; recipe_id INT AUTO_INCREMENT PRIMARY KEY,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; name VARCHAR(255) NOT NULL,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; ingredients TEXT NOT NULL,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; instructions TEXT NOT NULL&lt;/div&gt;&lt;div&gt;);&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;CREATE TABLE Categories (&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; category_id INT AUTO_INCREMENT PRIMARY KEY,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; category_name VARCHAR(50) NOT NULL&lt;/div&gt;&lt;div&gt;);&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;CREATE TABLE Recipe_Categories (&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; recipe_id INT,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; category_id INT,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; FOREIGN KEY (recipe_id) REFERENCES Recipes(recipe_id),&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; FOREIGN KEY (category_id) REFERENCES Categories(category_id),&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; PRIMARY KEY (recipe_id, category_id)&lt;/div&gt;&lt;div&gt;);&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;CREATE TABLE Calendar (&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; date DATE PRIMARY KEY,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; day_of_week VARCHAR(10),&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; notes TEXT&lt;/div&gt;&lt;div&gt;);&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;CREATE TABLE Meal_Plans (&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; meal_plan_id INT AUTO_INCREMENT PRIMARY KEY,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; date DATE,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; recipe_id INT,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; category_id INT,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; FOREIGN KEY (date) REFERENCES Calendar(date),&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; FOREIGN KEY (recipe_id) REFERENCES Recipes(recipe_id),&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; FOREIGN KEY (category_id) REFERENCES Categories(category_id)&lt;/div&gt;&lt;div&gt;);&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1690" y="2450" width="350" height="645" as="geometry" />
         </mxCell>
-        <mxCell id="SOHSO_YjRG-URR_jpq4t-2" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Recipes&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(153, 153, 153); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;recipe_id&lt;/td&gt;&lt;td&gt;INT NOT NULL AUTO INC&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;title&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;method&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;servings&lt;br&gt;&lt;/td&gt;&lt;td&gt;INT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;user_id&lt;/td&gt;&lt;td&gt;INT REFERENCES Users(user_id)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+        <mxCell id="SOHSO_YjRG-URR_jpq4t-2" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Recipes&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(153, 153, 153); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;recipe_id&lt;/td&gt;&lt;td&gt;INT NOT NULL AUTO INC&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;title&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;method&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;servings&lt;br&gt;&lt;/td&gt;&lt;td&gt;INT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;user_id&lt;/td&gt;&lt;td&gt;INT REFERENCES Users(user_id)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="220" y="3010" width="320" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="SOHSO_YjRG-URR_jpq4t-4" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Meal_Plans&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(153, 153, 153); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;meal_entry_id&lt;/td&gt;&lt;td&gt;ObjectId, Required, Unique&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;date&lt;/td&gt;&lt;td&gt;&lt;span style=&quot;white-space-collapse: collapse;&quot;&gt;Date, Required&lt;/span&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;category_id&lt;/td&gt;&lt;td&gt;&lt;span style=&quot;white-space-collapse: collapse;&quot;&gt;ObjectId, References Category, Required&lt;/span&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;user_id&lt;/td&gt;&lt;td&gt;&lt;span style=&quot;white-space-collapse: collapse;&quot;&gt;ObjectId, References User, Required&lt;/span&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;recipe_id&lt;/td&gt;&lt;td&gt;ObjectId, References Recipes, Required&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;title&lt;/td&gt;&lt;td&gt;String, Required&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+        <mxCell id="SOHSO_YjRG-URR_jpq4t-4" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Meal_Plans&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(153, 153, 153); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;meal_entry_id&lt;/td&gt;&lt;td&gt;ObjectId, Required, Unique&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;date&lt;/td&gt;&lt;td&gt;&lt;span style=&quot;white-space-collapse: collapse;&quot;&gt;Date, Required&lt;/span&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;category_id&lt;/td&gt;&lt;td&gt;&lt;span style=&quot;white-space-collapse: collapse;&quot;&gt;ObjectId, References Category, Required&lt;/span&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;user_id&lt;/td&gt;&lt;td&gt;&lt;span style=&quot;white-space-collapse: collapse;&quot;&gt;ObjectId, References User, Required&lt;/span&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;recipe_id&lt;/td&gt;&lt;td&gt;ObjectId, References Recipes, Required&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;title&lt;/td&gt;&lt;td&gt;String, Required&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="160" y="3420" width="400" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="SOHSO_YjRG-URR_jpq4t-5" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Users&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(153, 153, 153); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;user_id&lt;/td&gt;&lt;td&gt;ObjectId, Required, Unique&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;username&lt;/td&gt;&lt;td&gt;String, Required&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;email&lt;/td&gt;&lt;td&gt;String, Required, Unique&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;password&lt;br&gt;&lt;/td&gt;&lt;td&gt;String, Required&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+        <mxCell id="SOHSO_YjRG-URR_jpq4t-5" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Users&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(153, 153, 153); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;user_id&lt;/td&gt;&lt;td&gt;ObjectId, Required, Unique&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;username&lt;/td&gt;&lt;td&gt;String, Required&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;email&lt;/td&gt;&lt;td&gt;String, Required, Unique&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;password&lt;br&gt;&lt;/td&gt;&lt;td&gt;String, Required&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="-210" y="3420" width="320" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="SOHSO_YjRG-URR_jpq4t-6" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Recipes&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(153, 153, 153); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;recipe_id&lt;/td&gt;&lt;td&gt;&lt;span style=&quot;white-space-collapse: collapse;&quot;&gt;ObjectId, Required, Unique&lt;/span&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;title&lt;/td&gt;&lt;td&gt;String, Required, Unique&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;method&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;servings&lt;br&gt;&lt;/td&gt;&lt;td&gt;Number&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;image_url&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;user_id&lt;/td&gt;&lt;td&gt;ObjectId, References User, Required&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+        <mxCell id="SOHSO_YjRG-URR_jpq4t-6" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Recipes&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(153, 153, 153); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;recipe_id&lt;/td&gt;&lt;td&gt;&lt;span style=&quot;white-space-collapse: collapse;&quot;&gt;ObjectId, Required, Unique&lt;/span&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;title&lt;/td&gt;&lt;td&gt;String, Required, Unique&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;method&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;servings&lt;br&gt;&lt;/td&gt;&lt;td&gt;Number&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;image_url&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;user_id&lt;/td&gt;&lt;td&gt;ObjectId, References User, Required&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="160" y="3590" width="320" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="SOHSO_YjRG-URR_jpq4t-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.003;entryY=0.633;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="SOHSO_YjRG-URR_jpq4t-4">
+        <mxCell id="SOHSO_YjRG-URR_jpq4t-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.003;entryY=0.633;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="SOHSO_YjRG-URR_jpq4t-4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="110" y="3451" as="sourcePoint" />
             <mxPoint x="150" y="3530" as="targetPoint" />
@@ -216,7 +216,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="SOHSO_YjRG-URR_jpq4t-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.929;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="SOHSO_YjRG-URR_jpq4t-6">
+        <mxCell id="SOHSO_YjRG-URR_jpq4t-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.929;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="SOHSO_YjRG-URR_jpq4t-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="110" y="3450" as="sourcePoint" />
             <mxPoint x="189" y="3508" as="targetPoint" />
@@ -227,26 +227,16 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="SOHSO_YjRG-URR_jpq4t-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.214;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="SOHSO_YjRG-URR_jpq4t-6">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="160" y="3530" as="sourcePoint" />
-            <mxPoint x="269" y="3578" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="140" y="3530" />
-              <mxPoint x="140" y="3620" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="SOHSO_YjRG-URR_jpq4t-14" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Category&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(153, 153, 153); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;category_id&lt;/td&gt;&lt;td&gt;ObjectId, Required, Unique&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;category_name&lt;/td&gt;&lt;td&gt;String, Required&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+        <mxCell id="SOHSO_YjRG-URR_jpq4t-14" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Category&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(153, 153, 153); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;category_id&lt;/td&gt;&lt;td&gt;ObjectId, Required, Unique&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;category_name&lt;/td&gt;&lt;td&gt;String, Required&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="610" y="3460" width="320" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SOHSO_YjRG-URR_jpq4t-15" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Ingredients&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(153, 153, 153); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;ingredient_id&lt;/td&gt;&lt;td&gt;ObjectId, Required, Unique&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;ingredient_name&lt;/td&gt;&lt;td&gt;String, Required, Unique&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+        <mxCell id="SOHSO_YjRG-URR_jpq4t-15" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Ingredients&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(153, 153, 153); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;ingredient_id&lt;/td&gt;&lt;td&gt;ObjectId, Required, Unique&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;ingredient_name&lt;/td&gt;&lt;td&gt;String, Required, Unique&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="610" y="3700" width="320" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SOHSO_YjRG-URR_jpq4t-16" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Recipe_Ingredients&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(153, 153, 153); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;recipe_ingredient_id&lt;/td&gt;&lt;td&gt;ObjectId, Required, Unique&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;recipe_id&lt;/td&gt;&lt;td&gt;ObjectId, References Recipes, Required&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;ingredient_id&lt;/td&gt;&lt;td&gt;ObjectId, References Ingredients, Required&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;quantity&lt;/td&gt;&lt;td&gt;Number&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+        <mxCell id="SOHSO_YjRG-URR_jpq4t-16" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Recipe_Ingredients&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(153, 153, 153); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;recipe_ingredient_id&lt;/td&gt;&lt;td&gt;ObjectId, Required, Unique&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;recipe_id&lt;/td&gt;&lt;td&gt;ObjectId, References Recipes, Required&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;ingredient_id&lt;/td&gt;&lt;td&gt;ObjectId, References Ingredients, Required&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;quantity&lt;/td&gt;&lt;td&gt;Number&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="610" y="3590" width="430" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="SOHSO_YjRG-URR_jpq4t-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="SOHSO_YjRG-URR_jpq4t-16">
+        <mxCell id="SOHSO_YjRG-URR_jpq4t-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="SOHSO_YjRG-URR_jpq4t-16" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="480" y="3620" as="sourcePoint" />
             <mxPoint x="480" y="3710" as="targetPoint" />
@@ -256,7 +246,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="SOHSO_YjRG-URR_jpq4t-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.66;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="SOHSO_YjRG-URR_jpq4t-15" target="SOHSO_YjRG-URR_jpq4t-16">
+        <mxCell id="SOHSO_YjRG-URR_jpq4t-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.66;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="SOHSO_YjRG-URR_jpq4t-15" target="SOHSO_YjRG-URR_jpq4t-16" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="610" y="3660" as="sourcePoint" />
             <mxPoint x="610" y="3740" as="targetPoint" />
@@ -266,7 +256,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="SOHSO_YjRG-URR_jpq4t-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+        <mxCell id="SOHSO_YjRG-URR_jpq4t-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="580" y="3489.96" as="sourcePoint" />
             <mxPoint x="560" y="3489.96" as="targetPoint" />
@@ -275,10 +265,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="SOHSO_YjRG-URR_jpq4t-22" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;direction=south;dashed=1;" vertex="1" parent="1">
+        <mxCell id="SOHSO_YjRG-URR_jpq4t-22" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;direction=south;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="570" y="3320" width="20" height="480" as="geometry" />
         </mxCell>
-        <mxCell id="SOHSO_YjRG-URR_jpq4t-24" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;fontSize=12;" edge="1" parent="1">
+        <mxCell id="SOHSO_YjRG-URR_jpq4t-24" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;fontSize=12;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="570" y="3380" as="sourcePoint" />
             <mxPoint x="510" y="3380" as="targetPoint" />
@@ -288,23 +278,34 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="SOHSO_YjRG-URR_jpq4t-25" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;fontSize=12;exitX=0.105;exitY=0.329;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+        <mxCell id="SOHSO_YjRG-URR_jpq4t-25" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;fontSize=12;exitX=0.105;exitY=0.329;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="590.0000000000001" y="3380.4" as="sourcePoint" />
             <mxPoint x="651.58" y="3380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="SOHSO_YjRG-URR_jpq4t-26" value="Current Implementation" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="SOHSO_YjRG-URR_jpq4t-26" value="Current Implementation" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="390" y="3330" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="SOHSO_YjRG-URR_jpq4t-27" value="Future Growth Possibilities" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="SOHSO_YjRG-URR_jpq4t-27" value="Future Growth Possibilities" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="630" y="3330" width="130" height="30" as="geometry" />
         </mxCell>
         <UserObject label="https://www.figma.com/design/s92GiRclw6iB7kli9t3Pzw/IOD-Capstone-MealPlanner?node-id=1669-162202&amp;t=UWohmEjdm7HUopNN-1" link="https://www.figma.com/design/s92GiRclw6iB7kli9t3Pzw/IOD-Capstone-MealPlanner?node-id=1669-162202&amp;t=UWohmEjdm7HUopNN-1" id="SOHSO_YjRG-URR_jpq4t-28">
-          <mxCell style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxCell style="text;whiteSpace=wrap;" parent="1" vertex="1">
             <mxGeometry x="710" y="4160" width="560" height="50" as="geometry" />
           </mxCell>
         </UserObject>
+        <mxCell id="r8Yt7q6-tGOXi38tLjWn-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" target="SOHSO_YjRG-URR_jpq4t-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="3620" as="sourcePoint" />
+            <mxPoint x="80" y="3570" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="3620" />
+              <mxPoint x="140" y="3620" />
+              <mxPoint x="140" y="3525" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
